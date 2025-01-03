@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0fd93cc8-b73e-451c-8061-2865b9ac630a)# Memorium
+# Memorium
 Memorium Old Self Leak 
 
 
