@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ec538e21-c1e2-48f9-a629-6ee41f01ac7a}</ProjectGuid>
+    <RootNamespace>Undetected</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Memorium</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>RuntimeBroker</TargetName>
+    <OutDir>Release\Bin</OutDir>
+    <IntDir>Release\Bin</IntDir>
+    <ExcludePath>C:\Users\Windows\Desktop\load\Old src\lib\libcurl.lib;$(ExcludePath)</ExcludePath>
+    <IncludePath>C:\Users\vexify\Documents\f2t\freetype;C:\Users\vexify\Documents\f2t;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;C:\Users\vexify\Documents\f2t\include;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Racballs32\Desktop\Undetected.xyz\Ud\Undetected\;C:\Users\Racballs32\Desktop\Undetected.xyz\Ud\Undetected\ImGui\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Users\Shadow\Documents\vcpkg\installed\x64-windows-static\include;C:\Users\KdotOrDrizzy\Documents\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;d3d11.lib;WS2_32.lib;Crypt32.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64\d3dx11.lib;D3D11.lib;urlmon.lib;Shell32.lib;Dwmapi.lib;ntdll.lib;atls.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalLibraryDirectories>C:\Users\Shadow\Documents\vcpkg\installed\x64-windows-static\lib;C:\Users\KdotOrDrizzy\Documents\vcpkg\installed\x64-windows-static\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Draws\ImGui\custom_widgets.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui_freetype.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Source\Draws\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="main.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aimbot\aimbot-class.hpp" />
+    <ClInclude Include="aimbot\aimbot.hpp" />
+    <ClInclude Include="aimbot\inputs.hpp" />
+    <ClInclude Include="aimbot\ue5.hpp" />
+    <ClInclude Include="driver\driver.h" />
+    <ClInclude Include="Source\Authentication\Ethera\bytes.h" />
+    <ClInclude Include="Source\Authentication\Ethera\Ethera.h" />
+    <ClInclude Include="Source\Authentication\mouse.hpp" />
+    <ClInclude Include="Source\Authentication\Sentinal.h" />
+    <ClInclude Include="Source\Draws\ImGui\custom_widgets.hpp" />
+    <ClInclude Include="Source\Draws\ImGui\font.h" />
+    <ClInclude Include="ImGui\iconss.h" />
+    <ClInclude Include="Source\Draws\ImGui\image.h" />
+    <ClInclude Include="Source\Draws\ImGui\imgui_freetype.h" />
+    <ClInclude Include="Source\Draws\ImGui\imgui_settings.h" />
+    <ClInclude Include="ImGui\imstv_rectpack.h" />
+    <ClInclude Include="include\discord_register.h" />
+    <ClInclude Include="include\discord_rpc.h" />
+    <ClInclude Include="reversing\entity-class.hpp" />
+    <ClInclude Include="reversing\entity-structs.hpp" />
+    <ClInclude Include="reversing\entity-vectors.hpp" />
+    <ClInclude Include="reversing\external-helper.hpp" />
+    <ClInclude Include="reversing\external-utils.hpp" />
+    <ClInclude Include="reversing\getoffsets.hpp" />
+    <ClInclude Include="reversing\ida.hpp" />
+    <ClInclude Include="reversing\stdafx.h" />
+    <ClInclude Include="Source\Draws\ImGui\imconfig.h" />
+    <ClInclude Include="Source\Draws\ImGui\imgui.h" />
+    <ClInclude Include="Source\Draws\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Source\Draws\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Source\Draws\ImGui\imgui_internal.h" />
+    <ClInclude Include="Source\Draws\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Source\Draws\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Source\Draws\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\awesomeanother.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\diddyfont.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\fonts\kurwafont.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\fonts\kurwaimage.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\fuckingawesome.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\images\ar.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\images\pistol.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\images\shotgun.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\images\skeleton.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\images\smg.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\images\sniper.h" />
+    <ClInclude Include="Source\Draws\menu_helpers\imgui_settings.h" />
+    <ClInclude Include="Source\Packages\defs\burbturdfont.h" />
+    <ClInclude Include="threads\actors.hpp" />
+    <ClInclude Include="threads\cache.hpp" />
+    <ClInclude Include="threads\world-helper.hpp" />
+    <ClInclude Include="threads\world.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\Authentication\Ethera\Ethera_Protection.lib" />
+    <Library Include="Source\Authentication\Ethera\libcurl.lib" />
+    <Library Include="Source\Authentication\Sentinal.lib" />
+    <Library Include="Source\Authentication\SonyDriverHelper.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
